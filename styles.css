@@ -1,0 +1,32 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: darkgray; 
+    font-family: sans-serif; 
+} 
+   
+#tabuleiro { 
+    display: grid; 
+    grid-template-columns: repeat(4, 80px); 
+    grid-gap: 5px; 
+} 
+   
+.peca { 
+    width: 80px; 
+    height: 80px; 
+    background-color: gainsboro; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 24px; 
+    cursor: pointer; 
+    border: 1px solid black; 
+} 
+   
+.peca.vazio { 
+    background-color: transparent; 
+    border: none; 
+}
